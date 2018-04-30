@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{C78AADD5-828E-4530-BF82-81E90B64C31D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GameDev</RootNamespace>
+    <AssemblyName>GameDev</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\Model\" />
+    <Folder Include="src\View\" />
+    <Folder Include="src\Controller\" />
+    <Folder Include="src\Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\assets\Animation\explosion.png" />
+    <None Include="src\assets\Animation\mineAnimation.png" />
+    <None Include="src\assets\Animation\shipAnimation.png" />
+    <None Include="src\assets\Font\gameFont.spritefont" />
+    <None Include="src\assets\Sound\explosion.wav" />
+    <None Include="src\assets\Sound\gameMusic.mp3" />
+    <None Include="src\assets\Sound\laserFire.wav" />
+    <None Include="src\assets\Sound\menuMusic.mp3" />
+    <None Include="src\assets\Texture\bgLayer1.png" />
+    <None Include="src\assets\Texture\bgLayer2.png" />
+    <None Include="src\assets\Texture\endMenu.png" />
+    <None Include="src\assets\Texture\laser.png" />
+    <None Include="src\assets\Texture\mainMenu.png" />
+    <None Include="src\assets\Texture\mainbackground.png" />
+    <None Include="src\assets\Texture\mine.png" />
+    <None Include="src\assets\Texture\player.png" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\Model\Player.cs" />
+    <Compile Include="src\Controller\Controller.cs" />
+    <Compile Include="src\Controller\Program.cs" />
+    <Compile Include="src\Controller\SpaceGame.cs" />
+    <Compile Include="src\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GDS.Monogame.ParticleSystem">
+      <HintPath>..\packages\GDS.Monogame.ParticleSystem.1.0.0\lib\GDS.Monogame.ParticleSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="box2d">
+      <HintPath>..\packages\Cocos2D-XNA.Windows.2.0.3.2\lib\box2d.dll</HintPath>
+    </Reference>
+    <Reference Include="cocos2d-xna">
+      <HintPath>..\packages\Cocos2D-XNA.Windows.2.0.3.2\lib\cocos2d-xna.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\Cocos2D-XNA.Windows.2.0.3.2\lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="zlib.net">
+      <HintPath>..\packages\Cocos2D-XNA.Windows.2.0.3.2\lib\zlib.net.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Content.Pipeline">
+      <HintPath>..\packages\MonoGame.Framework.Content.Pipeline.Portable.3.6.0.1625\lib\portable-net45+win8+wpa81\MonoGame.Framework.Content.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\packages\MonoGame.Framework.WindowsDX.3.6.0.1625\lib\net40\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cairo" />
+    <Reference Include="Mono.CompilerServices.SymbolWriter" />
+    <Reference Include="Mono.CSharp" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="Mono.Data.Tds" />
+    <Reference Include="Mono.Debugger.Soft" />
+    <Reference Include="Mono.Http" />
+    <Reference Include="Mono.Management" />
+    <Reference Include="Mono.Messaging" />
+    <Reference Include="Mono.Messaging.RabbitMQ" />
+    <Reference Include="Mono.Posix" />
+    <Reference Include="Mono.Security" />
+    <Reference Include="Mono.Simd" />
+    <Reference Include="Mono.Tasklets" />
+    <Reference Include="Mono.WebBrowser" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+</Project>

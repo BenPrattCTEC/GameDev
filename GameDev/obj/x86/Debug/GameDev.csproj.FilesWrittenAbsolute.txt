@@ -1,0 +1,12 @@
+/home/ben/Projects/GameDev/GameDev/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/ben/Projects/GameDev/GameDev/bin/Debug/GDS.Monogame.ParticleSystem.dll
+/home/ben/Projects/GameDev/GameDev/bin/Debug/box2d.dll
+/home/ben/Projects/GameDev/GameDev/bin/Debug/cocos2d-xna.dll
+/home/ben/Projects/GameDev/GameDev/bin/Debug/ICSharpCode.SharpZipLib.dll
+/home/ben/Projects/GameDev/GameDev/bin/Debug/zlib.net.dll
+/home/ben/Projects/GameDev/GameDev/bin/Debug/MonoGame.Framework.Content.Pipeline.dll
+/home/ben/Projects/GameDev/GameDev/bin/Debug/MonoGame.Framework.dll
+/home/ben/Projects/GameDev/GameDev/bin/Debug/GameDev.exe.mdb
+/home/ben/Projects/GameDev/GameDev/bin/Debug/GameDev.exe
+/home/ben/Projects/GameDev/GameDev/obj/x86/Debug/GameDev.exe
+/home/ben/Projects/GameDev/GameDev/obj/x86/Debug/GameDev.exe.mdb
